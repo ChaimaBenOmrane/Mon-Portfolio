@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaima Ben Omrane | Software Engineer & AI Specialist</title>
+    <meta name="description" content="Portfolio de Chaima Ben Omrane - Étudiante en ingénierie logicielle spécialisée en Intelligence Artificielle">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-text">CB</span>
+            </a>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link" data-fr="Accueil" data-en="Home">Accueil</a></li>
+                <li><a href="#about" class="nav-link" data-fr="À propos" data-en="About">À propos</a></li>
+                <li><a href="#skills" class="nav-link" data-fr="Compétences" data-en="Skills">Compétences</a></li>
+                <li><a href="#experience" class="nav-link" data-fr="Expérience" data-en="Experience">Expérience</a></li>
+                <li><a href="#projects" class="nav-link" data-fr="Projets" data-en="Projects">Projets</a></li>
+                <li><a href="#contact" class="nav-link" data-fr="Contact" data-en="Contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="lang-toggle" id="lang-toggle" aria-label="Toggle language">
+                    <span class="lang-option active" data-lang="fr">FR</span>
+                    <span class="lang-divider">/</span>
+                    <span class="lang-option" data-lang="en">EN</span>
+                </button>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-label" data-fr="Bienvenue dans mon univers" data-en="Welcome to my world">
+                    Bienvenue dans mon univers
+                </div>
+                <h1 class="hero-title">
+                    <span class="hero-greeting" data-fr="Bonjour, je suis" data-en="Hi, I'm">Bonjour, je suis</span>
+                    <span class="hero-name">Chaima Ben Omrane</span>
+                    <span class="hero-subtitle" data-fr="Ingénieure Logiciel & Spécialiste IA" data-en="Software Engineer & AI Specialist">
+                        Ingénieure Logiciel & Spécialiste IA
+                    </span>
+                </h1>
+                <p class="hero-description" data-fr="Étudiante en dernière année de cycle ingénieur à l'Institut Supérieur d'Informatique d'Ariana. Passionnée par l'Intelligence Artificielle et le développement full-stack, je crée des solutions innovantes qui allient performance technique et impact réel." data-en="Final-year software engineering student at the Higher Institute of Computer Science of Ariana. Passionate about Artificial Intelligence and full-stack development, I create innovative solutions that combine technical performance with real impact.">
+                    Étudiante en dernière année de cycle ingénieur à l'Institut Supérieur d'Informatique d'Ariana. Passionnée par l'Intelligence Artificielle et le développement full-stack, je crée des solutions innovantes qui allient performance technique et impact réel.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary" data-fr="Découvrir mes projets" data-en="Explore my projects">
+                        <span>Découvrir mes projets</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                    <a href="#contact" class="btn btn-outline" data-fr="Me contacter" data-en="Contact me">
+                        Me contacter
+                    </a>
+                </div>
+                <div class="hero-social">
+                    <span class="social-label" data-fr="Retrouvez-moi sur" data-en="Find me on">Retrouvez-moi sur</span>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/chaima-ben-omrane-081186253" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="https://github.com/chaimabenomrane" target="_blank" rel="noopener" aria-label="GitHub">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="/cdn-cgi/l/email-protection#80e2e5eeefedf2e1eee5e3e8e1e9ede1b9b5c0e7ede1e9ecaee3efed" aria-label="Email">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="visual-card">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="code-snippet">
+                            <div class="code-header">
+                                <span class="code-dot"></span>
+                                <span class="code-dot"></span>
+                                <span class="code-dot"></span>
+                            </div>
+                            <div class="code-body">
+                                <span class="code-comment">// Intelligence Artificielle</span>
+                                <span class="code-keyword">class</span> <span class="code-class">AIEngineer</span> {
+                                  <span class="code-function">solve</span>(<span class="code-param">problem</span>) {
+                                    <span class="code-keyword">return</span> <span class="code-string">'Innovation'</span>;
+                                  }
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span data-fr="Défiler pour découvrir" data-en="Scroll to discover">Défiler pour découvrir</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label" data-fr="Qui suis-je ?" data-en="Who am I?">Qui suis-je ?</span>
+                <h2 class="section-title" data-fr="À propos de moi" data-en="About me">À propos de moi</h2>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-intro" data-fr="Étudiante en dernière année de cycle ingénieur à l'Institut Supérieur d'Informatique Ariana, je recherche un stage de fin d'études de 6 mois à partir de janvier/février 2026." data-en="Final-year software engineering student at the Higher Institute of Computer Science of Ariana, seeking a 6-month end-of-studies internship starting January/February 2026.">
+                        <p>Étudiante en dernière année de cycle ingénieur à l'Institut Supérieur d'Informatique Ariana, je recherche un <strong>stage de fin d'études de 6 mois</strong> à partir de janvier/février 2026.</p>
+                    </div>
+                    
+                    <div class="about-description" data-fr="Passionnée par l'Intelligence Artificielle et le développement logiciel, j'ai acquis une solide expérience à travers divers projets full-stack intégrant Machine Learning, Deep Learning et systèmes embarqués. Ma curiosité et ma rigueur me poussent constamment à explorer de nouvelles technologies et à relever des défis techniques complexes." data-en="Passionate about Artificial Intelligence and software development, I have gained solid experience through various full-stack projects integrating Machine Learning, Deep Learning and embedded systems. My curiosity and rigor constantly push me to explore new technologies and take on complex technical challenges.">
+                        <p>Passionnée par l'<strong>Intelligence Artificielle</strong> et le développement logiciel, j'ai acquis une solide expérience à travers divers projets full-stack intégrant Machine Learning, Deep Learning et systèmes embarqués.</p>
+                        <p>Ma curiosité et ma rigueur me poussent constamment à explorer de nouvelles technologies et à relever des défis techniques complexes.</p>
+                    </div>
+
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">6+</span>
+                            <span class="stat-label" data-fr="Stages professionnels" data-en="Professional internships">Stages professionnels</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label" data-fr="Projets académiques" data-en="Academic projects">Projets académiques</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">5</span>
+                            <span class="stat-label" data-fr="Certifications" data-en="Certifications">Certifications</span>
+                        </div>
+                    </div>
+
+                    <div class="about-cta">
+                        <a href="cv chaima Ben omrane  3eme Ing.pdf" class="btn btn-primary" download data-fr="Télécharger mon CV (FR)" data-en="Download my CV (FR)">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                            <span>Télécharger mon CV (FR)</span>
+                        </a>
+                        <a href="cv anglais  chaima Ben omrane  3eme Ing.pdf" class="btn btn-outline" download data-fr="CV Anglais" data-en="Download CV (EN)">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                            <span>CV Anglais</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="about-education">
+                    <h3 data-fr="Formation" data-en="Education">Formation</h3>
+                    <div class="education-timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-date">2023 - présent</span>
+                                <h4 data-fr="Ingénierie de développement logiciel" data-en="Software Development Engineering">Ingénierie de développement logiciel</h4>
+                                <p>Institut Supérieur d'Informatique, Ariana</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-date">2020 - 2023</span>
+                                <h4 data-fr="Licence Informatique (GLSI)" data-en="Bachelor's Degree in Computer Science (GLSI)">Licence Informatique (GLSI)</h4>
+                                <p>Institut Supérieur des Langues Appliquées et d'Informatique, Béja</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-date">2019 - 2020</span>
+                                <h4 data-fr="Baccalauréat en Mathématiques" data-en="Mathematics Baccalaureate">Baccalauréat en Mathématiques</h4>
+                                <p>Lycée Bardo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label" data-fr="Ce que je maîtrise" data-en="What I master">Ce que je maîtrise</span>
+                <h2 class="section-title" data-fr="Compétences techniques" data-en="Technical skills">Compétences techniques</h2>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                    </div>
+                    <h3 data-fr="Développement Logiciel" data-en="Software Development">Développement Logiciel</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">HTML/CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">PHP</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                    </div>
+                    <h3 data-fr="Frameworks & Technologies" data-en="Frameworks & Technologies">Frameworks & Technologies</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Angular</span>
+                        <span class="skill-tag">Spring Boot</span>
+                        <span class="skill-tag">Django</span>
+                        <span class="skill-tag">Flutter</span>
+                        <span class="skill-tag">Bootstrap</span>
+                        <span class="skill-tag">FastAPI</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <circle cx="12" cy="12" r="3"></circle>
+                            <path d="M12 1v6m0 6v6m8.66-15l-5.2 3m-5.92 3.34L4.34 7m0 10l5.2-3m5.92-3.34L20.66 17"></path>
+                        </svg>
+                    </div>
+                    <h3 data-fr="Intelligence Artificielle" data-en="Artificial Intelligence">Intelligence Artificielle</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">Deep Learning</span>
+                        <span class="skill-tag">NLP</span>
+                        <span class="skill-tag">Computer Vision</span>
+                        <span class="skill-tag">OpenCV</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">Transformers</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                            <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                        </svg>
+                    </div>
+                    <h3 data-fr="Bases de Données" data-en="Databases">Bases de Données</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">SQLite</span>
+                        <span class="skill-tag">Firebase</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">Cassandra</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                            <rect x="9" y="9" width="6" height="6"></rect>
+                            <line x1="9" y1="1" x2="9" y2="4"></line>
+                            <line x1="15" y1="1" x2="15" y2="4"></line>
+                            <line x1="9" y1="20" x2="9" y2="23"></line>
+                            <line x1="15" y1="20" x2="15" y2="23"></line>
+                            <line x1="20" y1="9" x2="23" y2="9"></line>
+                            <line x1="20" y1="14" x2="23" y2="14"></line>
+                            <line x1="1" y1="9" x2="4" y2="9"></line>
+                            <line x1="1" y1="14" x2="4" y2="14"></line>
+                        </svg>
+                    </div>
+                    <h3 data-fr="Systèmes Embarqués" data-en="Embedded Systems">Systèmes Embarqués</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Arduino</span>
+                        <span class="skill-tag">ESP32</span>
+                        <span class="skill-tag">STM</span>
+                        <span class="skill-tag">IoT</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                        </svg>
+                    </div>
+                    <h3 data-fr="Méthodologies" data-en="Methodologies">Méthodologies</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Agile</span>
+                        <span class="skill-tag">Scrum</span>
+                        <span class="skill-tag">Kanban</span>
+                        <span class="skill-tag">UML</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label" data-fr="Mon parcours" data-en="My journey">Mon parcours</span>
+                <h2 class="section-title" data-fr="Expériences professionnelles" data-en="Professional experience">Expériences professionnelles</h2>
+            </div>
+
+            <div class="experience-timeline">
+                <div class="experience-item">
+                    <div class="experience-date">
+                        <span data-fr="Juin - Août 2025" data-en="Jun - Aug 2025">Juin - Août 2025</span>
+                    </div>
+                    <div class="experience-content">
+                        <div class="experience-company">Headway CBS</div>
+                        <h3 data-fr="Stage d'été - Développeur Full-Stack" data-en="Summer Internship - Full-Stack Developer">Stage d'été - Développeur Full-Stack</h3>
+                        <p data-fr="Développement d'une application web full-stack dédiée à la gestion des formations et des événements." data-en="Development of a full-stack web application dedicated to training and event management.">
+                            Développement d'une application web full-stack dédiée à la gestion des formations et des événements.
+                        </p>
+                        <div class="experience-tech">
+                            <span>Angular</span>
+                            <span>Spring Boot</span>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-date">
+                        <span data-fr="Juin - Juillet 2024" data-en="Jun - Jul 2024">Juin - Juillet 2024</span>
+                    </div>
+                    <div class="experience-content">
+                        <div class="experience-company">Infraway</div>
+                        <h3 data-fr="Stage d'été - Développeur Full-Stack" data-en="Summer Internship - Full-Stack Developer">Stage d'été - Développeur Full-Stack</h3>
+                        <p data-fr="Design et développement d'une application mobile pour le système interne de l'entreprise." data-en="Design and development of a mobile application for the company's internal system.">
+                            Design et développement d'une application mobile pour le système interne de l'entreprise.
+                        </p>
+                        <div class="experience-tech">
+                            <span>Flutter</span>
+                            <span>REST API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-date">
+                        <span data-fr="Janvier - Juin 2023" data-en="Jan - Jun 2023">Janvier - Juin 2023</span>
+                    </div>
+                    <div class="experience-content">
+                        <div class="experience-company">DataDoIt</div>
+                        <h3 data-fr="Projet de Fin d'Études - Full-Stack & IA" data-en="Final-Year Project - Full-Stack & AI">Projet de Fin d'Études - Full-Stack & IA</h3>
+                        <p data-fr="Développement d'un système intelligent de gestion de caméras pour espaces d'exposition avec traitement d'images en temps réel, surveillance automatisée et analyse de flux de visiteurs." data-en="Development of an intelligent camera management system for exhibition spaces with real-time image processing, automated surveillance and visitor flow analysis.">
+                            Développement d'un système intelligent de gestion de caméras pour espaces d'exposition avec traitement d'images en temps réel, surveillance automatisée et analyse de flux de visiteurs.
+                        </p>
+                        <div class="experience-tech">
+                            <span>Django</span>
+                            <span>OpenCV</span>
+                            <span>SQLite</span>
+                            <span>Computer Vision</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-date">
+                        <span data-fr="Juillet - Août 2022" data-en="Jul - Aug 2022">Juillet - Août 2022</span>
+                    </div>
+                    <div class="experience-content">
+                        <div class="experience-company">Tunisian Cloud</div>
+                        <h3 data-fr="Stage d'été - Développeur Full-Stack" data-en="Summer Internship - Full-Stack Developer">Stage d'été - Développeur Full-Stack</h3>
+                        <p data-fr="Design et développement d'un dashboard de gestion de bibliothèque." data-en="Design and development of a library management dashboard.">
+                            Design et développement d'un dashboard de gestion de bibliothèque.
+                        </p>
+                        <div class="experience-tech">
+                            <span>Angular</span>
+                            <span>Spring Boot</span>
+                            <span>MySQL</span>
+                            <span>Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-date">
+                        <span data-fr="Juin - Juillet 2022" data-en="Jun - Jul 2022">Juin - Juillet 2022</span>
+                    </div>
+                    <div class="experience-content">
+                        <div class="experience-company">SIGA</div>
+                        <h3 data-fr="Stage d'été - Développeur Full-Stack" data-en="Summer Internship - Full-Stack Developer">Stage d'été - Développeur Full-Stack</h3>
+                        <p data-fr="Design et développement d'un système de gestion des réclamations." data-en="Design and development of a complaint management system.">
+                            Design et développement d'un système de gestion des réclamations.
+                        </p>
+                        <div class="experience-tech">
+                            <span>Angular</span>
+                            <span>Spring Boot</span>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-date">
+                        <span data-fr="Juillet - Août 2021" data-en="Jul - Aug 2021">Juillet - Août 2021</span>
+                    </div>
+                    <div class="experience-content">
+                        <div class="experience-company">MED_MEDIAWEB</div>
+                        <h3 data-fr="Stage d'été - Développeur Full-Stack" data-en="Summer Internship - Full-Stack Developer">Stage d'été - Développeur Full-Stack</h3>
+                        <p data-fr="Design et développement d'un site web de salle de sport 'PANDA'." data-en="Design and development of a gym website 'PANDA'.">
+                            Design et développement d'un site web de salle de sport "PANDA".
+                        </p>
+                        <div class="experience-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>PHP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label" data-fr="Mes réalisations" data-en="My achievements">Mes réalisations</span>
+                <h2 class="section-title" data-fr="Projets académiques" data-en="Academic projects">Projets académiques</h2>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <line x1="22" y1="12" x2="2" y2="12"></line>
+                            <path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path>
+                            <line x1="6" y1="16" x2="6.01" y2="16"></line>
+                            <line x1="10" y1="16" x2="10.01" y2="16"></line>
+                        </svg>
+                    </div>
+                    <h3 data-fr="Système de gestion de chercheurs avec IA" data-en="Researcher Management System with AI">Système de gestion de chercheurs avec IA</h3>
+                    <p data-fr="Application web complète intégrant des fonctionnalités avancées d'IA : traduction multilingue (FR/EN), résumé automatique, détection de contenu inapproprié, et système de recommandation intelligent basé sur FAISS et SentenceTransformers." data-en="Complete web application integrating advanced AI features: multilingual translation (FR/EN), automatic summarization, inappropriate content detection, and intelligent recommendation system based on FAISS and SentenceTransformers.">
+                        Application web complète intégrant des fonctionnalités avancées d'IA : traduction multilingue (FR/EN), résumé automatique, détection de contenu inapproprié, et système de recommandation intelligent basé sur FAISS et SentenceTransformers.
+                    </p>
+                    <div class="project-tech">
+                        <span>Angular</span>
+                        <span>Spring Boot</span>
+                        <span>FastAPI</span>
+                        <span>Transformers</span>
+                        <span>FAISS</span>
+                        <span>NLP</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                            <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                        </svg>
+                    </div>
+                    <h3 data-fr="Application de quiz interactif avec IA" data-en="Interactive Quiz App with AI">Application de quiz interactif avec IA</h3>
+                    <p data-fr="Plateforme multiplateforme de quiz en temps réel avec module IA capable de générer automatiquement des quiz à partir de documents (PDF, DOCX, TXT) via analyse NLP et extraction de concepts clés." data-en="Cross-platform real-time quiz system with AI module capable of automatically generating quizzes from documents (PDF, DOCX, TXT) via NLP analysis and key concept extraction.">
+                        Plateforme multiplateforme de quiz en temps réel avec module IA capable de générer automatiquement des quiz à partir de documents (PDF, DOCX, TXT) via analyse NLP et extraction de concepts clés.
+                    </p>
+                    <div class="project-tech">
+                        <span>Flutter</span>
+                        <span>Firebase</span>
+                        <span>Python</span>
+                        <span>NLTK</span>
+                        <span>FastAPI</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                        </svg>
+                    </div>
+                    <h3 data-fr="Application d'analyse prédictive du diabète" data-en="Predictive Diabetes Analysis App">Application d'analyse prédictive du diabète</h3>
+                    <p data-fr="Application web d'analyse de données médicales avec classification supervisée (Random Forest, SVM), clustering non supervisé (K-Means, DBSCAN) et prédiction du risque de diabète via interface interactive Streamlit." data-en="Medical data analysis web application with supervised classification (Random Forest, SVM), unsupervised clustering (K-Means, DBSCAN) and diabetes risk prediction via interactive Streamlit interface.">
+                        Application web d'analyse de données médicales avec classification supervisée (Random Forest, SVM), clustering non supervisé (K-Means, DBSCAN) et prédiction du risque de diabète via interface interactive Streamlit.
+                    </p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Streamlit</span>
+                        <span>Machine Learning</span>
+                        <span>Scikit-learn</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                            <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                        </svg>
+                    </div>
+                    <h3 data-fr="Système expert pour régime alimentaire personnalisé" data-en="Expert System for Personalized Diet Plans">Système expert pour régime alimentaire personnalisé</h3>
+                    <p data-fr="Système expert basé sur un moteur d'inférences (Experta) pour conseiller des régimes alimentaires selon le profil de santé et les objectifs de l'utilisateur." data-en="Expert system based on an inference engine (Experta) to recommend dietary plans according to user's health profile and goals.">
+                        Système expert basé sur un moteur d'inférences (Experta) pour conseiller des régimes alimentaires selon le profil de santé et les objectifs de l'utilisateur.
+                    </p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Experta</span>
+                        <span>Tkinter</span>
+                        <span>AI</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label" data-fr="Restons en contact" data-en="Let's stay in touch">Restons en contact</span>
+                <h2 class="section-title" data-fr="Contactez-moi" data-en="Contact me">Contactez-moi</h2>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p class="contact-intro" data-fr="Je suis actuellement à la recherche d'un stage de fin d'études de 6 mois à partir de janvier/février 2026. N'hésitez pas à me contacter pour discuter d'opportunités ou simplement échanger !" data-en="I am currently looking for a 6-month end-of-studies internship starting January/February 2026. Feel free to contact me to discuss opportunities or simply exchange!">
+                        Je suis actuellement à la recherche d'un <strong>stage de fin d'études de 6 mois</strong> à partir de janvier/février 2026. N'hésitez pas à me contacter pour discuter d'opportunités ou simplement échanger !
+                    </p>
+
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="/cdn-cgi/l/email-protection#91f3f4fffefce3f0fff4f2f9f0f8fcf0a8a4d1f6fcf0f8fdbff2fefc"><span class="__cf_email__" data-cfemail="bbd9ded5d4d6c9dad5ded8d3dad2d6da828efbdcd6dad2d795d8d4d6">[email&#160;protected]</span></a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 data-fr="Téléphone" data-en="Phone">Téléphone</h4>
+                                <a href="tel:+21652180036">+216 52 180 036</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 data-fr="Localisation" data-en="Location">Localisation</h4>
+                                <p>Bardo, Tunis, Tunisie</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>LinkedIn</h4>
+                                <a href="https://www.linkedin.com/in/chaima-ben-omrane-081186253" target="_blank" rel="noopener">chaima-ben-omrane</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contact-form" action="https://formspree.io/f/xdalodqp" method="POST">
+                        <div class="form-group">
+                            <label for="name" data-fr="Nom" data-en="Name">Nom</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" data-fr="Email" data-en="Email">Email</label>
+                            <input type="email" id="email" name="_replyto" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" data-fr="Sujet" data-en="Subject">Sujet</label>
+                            <input type="text" id="subject" name="_subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" data-fr="Message" data-en="Message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <!-- Protection anti-spam -->
+                        <input type="text" name="_gotcha" style="display:none">
+                        <button type="submit" class="btn btn-primary" data-fr="Envoyer le message" data-en="Send message">
+                            <span>Envoyer le message</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2026 Chaima Ben Omrane. <span data-fr="Tous droits réservés." data-en="All rights reserved.">Tous droits réservés.</span></p>
+                    <p class="footer-tagline" data-fr="Conçu avec passion et codé avec précision" data-en="Designed with passion and coded with precision">Conçu avec passion et codé avec précision</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://www.linkedin.com/in/chaima-ben-omrane-081186253" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/chaimabenomrane" target="_blank" rel="noopener" aria-label="GitHub">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="/cdn-cgi/l/email-protection#6f0d0a0100021d0e010a0c070e06020e565a2f08020e0603410c0002" aria-label="Email">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
