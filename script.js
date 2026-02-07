@@ -5,11 +5,13 @@ const html = document.documentElement;
 // Check for saved theme preference or default to light mode
 const currentTheme = localStorage.getItem('theme') || 'light';
 html.setAttribute('data-theme', currentTheme);
+console.log('Initial theme:', currentTheme);
 
 themeToggle.addEventListener('click', () => {
     const theme = html.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
     html.setAttribute('data-theme', theme);
     localStorage.setItem('theme', theme);
+    console.log('Theme switched to:', theme);
 });
 
 // Language Toggle
@@ -27,6 +29,8 @@ langToggle.addEventListener('click', () => {
 });
 
 function setLanguage(lang) {
+    console.log('Setting language to:', lang);
+    
     // Update active state on language toggle
     langOptions.forEach(option => {
         if (option.dataset.lang === lang) {
@@ -38,12 +42,22 @@ function setLanguage(lang) {
     
     // Update all elements with language data attributes
     const elements = document.querySelectorAll('[data-fr][data-en]');
+    console.log('Found', elements.length, 'elements to translate');
+    
     elements.forEach(element => {
         const text = element.getAttribute(`data-${lang}`);
         if (text) {
-            // Check if element is an input or button
-            if (element.tagName === 'INPUT' || element.tagName === 'BUTTON') {
+            // Check if element is an input, button, or has a span child
+            if (element.tagName === 'INPUT') {
                 element.value = text;
+            } else if (element.tagName === 'BUTTON') {
+                // For buttons with span children
+                const span = element.querySelector('span');
+                if (span) {
+                    span.textContent = text;
+                } else {
+                    element.textContent = text;
+                }
             } else {
                 element.textContent = text;
             }
