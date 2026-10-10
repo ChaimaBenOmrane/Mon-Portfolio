@@ -1240,3 +1240,17 @@ section {
         text-align: center;
     }
 }
+
+/* Project category badge */
+.project-category {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent-secondary);
+}
+@media (max-width: 560px) {
+    .projects-grid { grid-template-columns: 1fr; }
+}
